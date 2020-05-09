@@ -10,9 +10,11 @@ import SwiftUI
 
 struct SliderColorScreen: View {
     
-    @State private var red: Double = 255
-    @State private var green: Double = 255
-    @State private var blue: Double = 255
+    @State private var red: Double = 23
+    @State private var green: Double = 23
+    @State private var blue: Double = 23
+    
+    @State private var storedPalette: [Color] = []
     
     private var builtColor: Color {
         get {
@@ -20,11 +22,44 @@ struct SliderColorScreen: View {
         }
     }
     
+    fileprivate func ColorPaletteView() -> some View {
+        return VStack {
+            Button(action: {
+                self.storedPalette.append(self.builtColor)
+            }) {
+                ZStack {
+                    Rectangle()
+                        .fill(Color(.secondarySystemGroupedBackground))
+                        .frame(width: 50, height: 50)
+                        .cornerRadius(25)
+                        .shadow(radius: 5)
+                    Image(systemName: "plus").resizable().frame(width: 20, height: 20, alignment: .center)
+                }
+            }
+            ForEach(storedPalette.reversed().prefix(5), id: \.self) { color in
+                Rectangle()
+                    .fill(color)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(25)
+                    .shadow(radius: 5)
+            }
+        }
+    }
+    
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
                 Rectangle().fill(builtColor).edgesIgnoringSafeArea(.top)
-                Text("da").foregroundColor(Color.white)
+                VStack {
+                    HStack {
+                        VStack {
+                            Text("Left")
+                        }
+                        Spacer()
+                        ColorPaletteView().padding()
+                    }
+                    Spacer()
+                }
             }
             ZStack {
                 VStack(spacing: -30) {

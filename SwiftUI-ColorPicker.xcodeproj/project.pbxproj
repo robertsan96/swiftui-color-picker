@@ -82,19 +82,19 @@
 		4677889C2466BD3E0053DEA0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4677889F2466BD800053DEA0 /* Controls */,
+				4677889F2466BD800053DEA0 /* Reusable */,
 				4677889D2466BD4A0053DEA0 /* SliderColorScreen.swift */,
 				4677888A2466B0820053DEA0 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4677889F2466BD800053DEA0 /* Controls */ = {
+		4677889F2466BD800053DEA0 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
 				4677889A2466B4750053DEA0 /* SliderView.swift */,
 			);
-			path = Controls;
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
