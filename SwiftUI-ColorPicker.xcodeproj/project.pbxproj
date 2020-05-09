@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4639BD3B2466D4AA00124FE7 /* ColorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4639BD3A2466D4AA00124FE7 /* ColorScreenView.swift */; };
 		467788872466B0820053DEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467788862466B0820053DEA0 /* AppDelegate.swift */; };
 		467788892466B0820053DEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467788882466B0820053DEA0 /* SceneDelegate.swift */; };
 		4677888B2466B0820053DEA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4677888A2466B0820053DEA0 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4639BD3A2466D4AA00124FE7 /* ColorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScreenView.swift; sourceTree = "<group>"; };
 		467788832466B0820053DEA0 /* SwiftUI-ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ColorPicker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467788862466B0820053DEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467788882466B0820053DEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				4677889F2466BD800053DEA0 /* Reusable */,
 				4677889D2466BD4A0053DEA0 /* SliderColorScreen.swift */,
+				4639BD3A2466D4AA00124FE7 /* ColorScreenView.swift */,
 				4677888A2466B0820053DEA0 /* ContentView.swift */,
 			);
 			path = Views;
@@ -172,6 +175,7 @@
 				467788872466B0820053DEA0 /* AppDelegate.swift in Sources */,
 				4677889B2466B4750053DEA0 /* SliderView.swift in Sources */,
 				467788892466B0820053DEA0 /* SceneDelegate.swift in Sources */,
+				4639BD3B2466D4AA00124FE7 /* ColorScreenView.swift in Sources */,
 				4677888B2466B0820053DEA0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

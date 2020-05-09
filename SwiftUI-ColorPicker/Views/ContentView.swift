@@ -9,12 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     var body: some View {
         TabView {
-            SliderColorScreen().tabItem {
-                Image(systemName: "slider.horizontal.below.rectangle")
-                Text("Sliders")
+            SliderColorScreen()
+                .tabItem {
+                    Image(systemName: "slider.horizontal.below.rectangle")
+                    Text("Sliders")
             }
             Text("Ok so camera here").tabItem {
                 Image(systemName: "camera")
@@ -25,7 +26,7 @@ struct ContentView: View {
                 Text("Photo Eyedropper")
             }
         }
-
+        
     }
 }
 
