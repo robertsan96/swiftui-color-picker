@@ -14,7 +14,7 @@
 		467788902466B0850053DEA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4677888F2466B0850053DEA0 /* Preview Assets.xcassets */; };
 		467788932466B0850053DEA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467788912466B0850053DEA0 /* LaunchScreen.storyboard */; };
 		4677889B2466B4750053DEA0 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4677889A2466B4750053DEA0 /* SliderView.swift */; };
-		4677889E2466BD4A0053DEA0 /* SliderColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4677889D2466BD4A0053DEA0 /* SliderColorView.swift */; };
+		4677889E2466BD4A0053DEA0 /* SliderColorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4677889D2466BD4A0053DEA0 /* SliderColorScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		467788922466B0850053DEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467788942466B0850053DEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4677889A2466B4750053DEA0 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		4677889D2466BD4A0053DEA0 /* SliderColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderColorView.swift; sourceTree = "<group>"; };
+		4677889D2466BD4A0053DEA0 /* SliderColorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderColorScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4677889F2466BD800053DEA0 /* Controls */,
-				4677889D2466BD4A0053DEA0 /* SliderColorView.swift */,
+				4677889D2466BD4A0053DEA0 /* SliderColorScreen.swift */,
 				4677888A2466B0820053DEA0 /* ContentView.swift */,
 			);
 			path = Views;
@@ -168,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4677889E2466BD4A0053DEA0 /* SliderColorView.swift in Sources */,
+				4677889E2466BD4A0053DEA0 /* SliderColorScreen.swift in Sources */,
 				467788872466B0820053DEA0 /* AppDelegate.swift in Sources */,
 				4677889B2466B4750053DEA0 /* SliderView.swift in Sources */,
 				467788892466B0820053DEA0 /* SceneDelegate.swift in Sources */,

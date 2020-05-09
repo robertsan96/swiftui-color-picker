@@ -1,5 +1,5 @@
 //
-//  SliderColorView.swift
+//  SliderColorScreen.swift
 //  SwiftUI-ColorPicker
 //
 //  Created by Robert Sandru on 5/9/20.
@@ -8,11 +8,11 @@
 
 import SwiftUI
 
-struct SliderColorView: View {
+struct SliderColorScreen: View {
     
-    @State private var red: Double = 23
-    @State private var green: Double = 23
-    @State private var blue: Double = 23
+    @State private var red: Double = 255
+    @State private var green: Double = 255
+    @State private var blue: Double = 255
     
     private var builtColor: Color {
         get {
@@ -24,20 +24,23 @@ struct SliderColorView: View {
         VStack(spacing: 0) {
             ZStack {
                 Rectangle().fill(builtColor).edgesIgnoringSafeArea(.top)
-                Text("da")
+                Text("da").foregroundColor(Color.white)
             }
             ZStack {
                 VStack(spacing: -30) {
                     HStack {
-                        Rectangle().fill(Color.white).frame(height: 50).cornerRadius(15)
-                    }
+                        Rectangle()
+                            .fill(Color(.secondarySystemGroupedBackground))
+                            .frame(height: 50)
+                            .cornerRadius(15)
+                    }.shadow(radius: 10)
                     VStack(alignment: .leading) {
                         SliderView(label: "Red", value: $red)
                         SliderView(label: "Green", value: $green)
                         SliderView(label: "Blue", value: $blue)
                     }
                     .padding()
-                    .background(Color.white)
+                    .background(Color(.secondarySystemGroupedBackground))
                 }
             }
             
@@ -49,6 +52,6 @@ struct SliderColorView: View {
 
 struct SliderColorView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderColorView()
+        SliderColorScreen()
     }
 }

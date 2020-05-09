@@ -12,8 +12,17 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            SliderColorView().tabItem {
-                Text("da")
+            SliderColorScreen().tabItem {
+                Image(systemName: "slider.horizontal.below.rectangle")
+                Text("Sliders")
+            }
+            Text("Ok so camera here").tabItem {
+                Image(systemName: "camera")
+                Text("Camera Pick")
+            }
+            Text("Load image and eyedrop loredan tada da a").tabItem {
+                Image(systemName: "photo")
+                Text("Photo Eyedropper")
             }
         }
 
