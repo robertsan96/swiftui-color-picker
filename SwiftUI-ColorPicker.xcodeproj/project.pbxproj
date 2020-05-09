@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4639BD3B2466D4AA00124FE7 /* ColorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4639BD3A2466D4AA00124FE7 /* ColorScreenView.swift */; };
+		4639BD3F2466DA7B00124FE7 /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = 4639BD3D2466DA7B00124FE7 /* light.png */; };
+		4639BD402466DA7B00124FE7 /* dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4639BD3E2466DA7B00124FE7 /* dark.png */; };
 		467788872466B0820053DEA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467788862466B0820053DEA0 /* AppDelegate.swift */; };
 		467788892466B0820053DEA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467788882466B0820053DEA0 /* SceneDelegate.swift */; };
 		4677888B2466B0820053DEA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4677888A2466B0820053DEA0 /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		4639BD3A2466D4AA00124FE7 /* ColorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScreenView.swift; sourceTree = "<group>"; };
+		4639BD3D2466DA7B00124FE7 /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		4639BD3E2466DA7B00124FE7 /* dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark.png; sourceTree = "<group>"; };
 		467788832466B0820053DEA0 /* SwiftUI-ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ColorPicker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467788862466B0820053DEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467788882466B0820053DEA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4639BD3C2466DA6600124FE7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4639BD3D2466DA7B00124FE7 /* light.png */,
+				4639BD3E2466DA7B00124FE7 /* dark.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		4677887A2466B0820053DEA0 = {
 			isa = PBXGroup;
 			children = (
+				4639BD3C2466DA6600124FE7 /* Assets */,
 				467788852466B0820053DEA0 /* SwiftUI-ColorPicker */,
 				467788842466B0820053DEA0 /* Products */,
 			);
@@ -158,6 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4639BD402466DA7B00124FE7 /* dark.png in Resources */,
+				4639BD3F2466DA7B00124FE7 /* light.png in Resources */,
 				467788932466B0850053DEA0 /* LaunchScreen.storyboard in Resources */,
 				467788902466B0850053DEA0 /* Preview Assets.xcassets in Resources */,
 				4677888D2466B0850053DEA0 /* Assets.xcassets in Resources */,
